@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="290.0" prefWidth="465.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.serega6531.encfsmanager.Controller">
+   <children>
+      <Button fx:id="mountButton" layoutX="63.0" layoutY="196.0" mnemonicParsing="false" onAction="#onMountClick" prefHeight="47.0" prefWidth="124.0" text="Mount" />
+      <Label layoutX="35.0" layoutY="31.0" prefHeight="41.0" prefWidth="95.0" text="Password:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passwordEdit" layoutX="202.0" layoutY="37.0" prefHeight="29.0" prefWidth="215.0" />
+      <Label fx:id="mountLabel" layoutX="35.0" layoutY="80.0" prefHeight="41.0" prefWidth="303.0" text="Mount point:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="350.0" layoutY="86.0" mnemonicParsing="false" onAction="#onChooseMountClick" prefHeight="29.0" prefWidth="67.0" text="Choose" />
+      <Button layoutX="350.0" layoutY="131.0" mnemonicParsing="false" onAction="#onChooseEncodeClick" prefHeight="29.0" prefWidth="67.0" text="Choose" />
+      <Label fx:id="encodeLabel" layoutX="35.0" layoutY="125.0" prefHeight="41.0" prefWidth="303.0" text="Encode dir:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="dismountButton" disable="true" layoutX="260.0" layoutY="196.0" mnemonicParsing="false" onAction="#onDismountClick" prefHeight="47.0" prefWidth="124.0" text="Dismount" />
+   </children>
+</AnchorPane>
