@@ -55,6 +55,9 @@ public class Controller {
                 pr.waitFor();
                 mountButton.setDisable(true);
                 dismountButton.setDisable(false);
+
+                Preferences prefs = Preferences.userNodeForPackage(Main.class);
+                prefs.put("password", pass);
             } catch (IOException e) {
                 e.printStackTrace();
                 new Alert(Alert.AlertType.ERROR, e.getLocalizedMessage()).showAndWait();

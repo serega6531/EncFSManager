@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
 import javafx.stage.Stage;
 
 import java.io.File;
@@ -38,6 +39,12 @@ public class Main extends Application {
             encodeDir = new File(encodeDirPath);
             Label label = (Label) scene.lookup("#encodeLabel");
             label.setText("Encode dir: " + encodeDirPath);
+        }
+
+        String password = prefs.get("password", null);
+        if(password != null){
+            PasswordField passwordField = (PasswordField) scene.lookup("#passwordEdit");
+            passwordField.setText(password);
         }
 
         primaryStage.setScene(scene);
